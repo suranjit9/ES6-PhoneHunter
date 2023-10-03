@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Phone </title>
+</head>
+<body>
+    <section class="w-4/5 mx-auto">
+        
+        <div id="textinput" class="pt-5 text-right">
+            <input id="pleaseInput" type="text" placeholder="Type here" class="input input-bordered md:w-[95%]  lg:w-full max-w-xs " />
+            <button onclick="hendalscearc()" class="btn  btn-primary  ">Primary</button>
+            
+        </div>
+        <div class="text-center pt-40 hidden" id="spner">
+            <span class="loading loading-ring loading-lg"></span>
+            <span class="loading loading-infinity loading-lg"></span>
+            <span class="loading loading-ring loading-lg"></span>
+        </div>
+        
+        <div id="card-contener" class="grid grid-col-1 md:grid-col-2 lg:grid-cols-3 gap-4">
+            
+        </div>
+        <div id="showall0"class="mt-5 pt-5 text-center hidden" >
+            <button  onclick="clickBtn()" class="btn btn-outline btn-primary  ">More</button>
+        </div>
+    </section>
+   
+    <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modalbox">
+        
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+
+
+    <script src="card.js"></script>
+</body>
+</html>
